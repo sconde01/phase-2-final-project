@@ -6,6 +6,7 @@ const EventForm = ({ addEvent }) => {
   const [name, setName] =useState ('')
   const [date, setDate] =useState ('')
   const [description, setDescription] =useState ('')
+  const [link, setLink] =useState('')
 
   const navigate = useNavigate();
 
@@ -18,7 +19,7 @@ const EventForm = ({ addEvent }) => {
         "Accept": "application/json",
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({ name, date, description })
+      body: JSON.stringify({ name, date, description, link })
     })
       .then(r => r.json())
       .then(data => {
@@ -62,12 +63,22 @@ const EventForm = ({ addEvent }) => {
           value={ description }
           onChange={e => setDescription(e.target.value)}
            />
+        </div>   
+        <br />
+        {/* //Link input box */}
+        <div>
+          <label htmlFor="link">Link to event:</label>
+          <input type="url" 
+          id="event-link"
+          value={ link }
+          onChange={e => setLink(e.target.value)}
+           />
+        </div>       
           <br />
           <br />
           <br />
           <button type="submit">Add Event</button>
 
-        </div>
       </form>
      
      </div>

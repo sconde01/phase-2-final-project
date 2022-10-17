@@ -1,13 +1,120 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+  font-size: 17px;
+  background-color: rgb(208, 232, 176);
+  background-image: url("https://www.oyorooms.com/blog/wp-content/uploads/2019/08/Banner-Image.jpg")
+}
+
+.Home {
+  text-align: center;
+  background-color: rgb(248, 199, 107);
+  padding: 3rem;
+  margin: 1rem;
+  text-align: center;
+
+}
+
+.EventForm {
+  text-align: center;
+}
+
+nav {
+  background-color: rgb(248, 199, 107);
+}
+
+nav a {
+  display: inline-block;
+  margin: 1rem;
+  padding: 0.25rem;
+  text-decoration: none;
+  font-size: 16pt;
+  color: rgb(8, 8, 8);
+  border-bottom: 2px solid rgb(178, 34, 176);
+  transition: 0.1s;
+}
+
+nav a:hover,
+nav a:active {
+  color: rgb(247, 246, 246);
+  border-bottom: 2px solid rgb(140, 96, 140);
+}
+
+nav a.active {
+  color: white;
+  background: rgb(234, 71, 255);
+}
+
+.form-box{
+  background-color: rgb(248, 199, 107);
+  padding: 2rem;
+  margin: 1rem;
+  text-align: center;
+
+}
+
+form > input,
+form > textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+form button {
+  padding: 0.5rem;
+  background-color: firebrick;
+  color: white;
+  font-weight: bold;
+  border: none;
+  font-size: large;
+}
+
+.events {
+  background-color: cornsilk;
+  min-height: 400px;
+}
+.up-coming {
+  background-color: rgb(248, 199, 107);
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+#event-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+}
+
+.name {
+  color: #fe5dd0;
+
+}
+.event-info {
+  background-color: rgb(248, 199, 107);
+  padding: 2rem;
+  margin: 1rem;
+  text-align: center;
+
+}
+
+.event-link {
+  background-color: lightblue;
+  margin: 0.25rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
