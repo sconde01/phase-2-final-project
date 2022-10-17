@@ -1,8 +1,17 @@
 import React from 'react'
+import EventInfo from './EventInfo'
 
-const EventsList = () => {
+const EventsList = ({ events }) => {
+
+  const eventCards = events.map(event => 
+  <EventInfo key={ event.id } event={ event }/>)
+
   return (
-    <div>EventsList</div>
+    <div>
+    <h3>Up-and-coming Friend Events</h3>
+    <br />
+      {eventCards}
+    </div>
   )
 }
 
